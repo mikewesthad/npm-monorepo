@@ -2,14 +2,17 @@
   "name": "@demo/monorepo",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@8.15.9",
+  "workspaces": [
+    "apps/*",
+    "packages/ui"
+  ],
   "engines": {
     "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "npm": ">=8.0.0"
   },
   "scripts": {
-    "dev": "pnpm --parallel run dev",
-    "build": "pnpm run build",
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
     "test": "echo 'No tests configured'"
   },
   "devDependencies": {
