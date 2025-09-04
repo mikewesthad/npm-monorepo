@@ -1,0 +1,7 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "preDeployCommand": ["echo pre deploy!"],
+    "startCommand": "npm run dev --workspace @demo/blog"
+  }
+}
