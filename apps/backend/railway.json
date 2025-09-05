@@ -3,7 +3,7 @@
   "build": {
     "buildCommand": "npm run build --workspace @demo/backend",
     "watchPatterns": ["package.json", "/apps/backend/**"]
-  }
+  },
   "deploy": {
     "preDeployCommand": ["echo pre deploy!"],
     "startCommand": "npm run dev --workspace @demo/backend"
