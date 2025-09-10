@@ -1,6 +1,6 @@
 # @demo/backend
 
-Backend application!
+Backend application
 
 ## Commands
 
